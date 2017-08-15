@@ -1,0 +1,18 @@
+<% provide(:title, "Images") %>
+
+<h1><%= image_tag("ch05/logo.gif", alt: "From A to Zucchini")  %></h1>
+
+  <figure>
+      <%= image_tag("ch05/chocolate-islands.jpg", alt: "Chocolate Islands", title: "Individual Chocolate Cakes") %>
+    <p>
+      <figcaption>
+          This recipe for individual chocolate cakes is so simple and so delectable!
+      </figcaption>
+    </p>
+  </figure>
+<h4>More Recipes:</h4>
+  <p>
+    <%= image_tag("ch05/lemon-posset.jpg", alt: "Lemon Posset", title: "Lemon Posset") %>
+    <%= image_tag("ch05/roasted-brussel-sprouts.jpg", alt: "Roasted Brussel Sprouts", title: "Roasted Brussel Sprouts") %>
+    <%= image_tag("ch05/zucchini-cake.jpg", alt: "Zucchini Cake", title: "Zucchini Cake") %>
+  </p>

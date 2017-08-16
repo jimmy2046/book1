@@ -1,13 +1,59 @@
 <% provide(:title, "HTML & CSS - Design and Build Websites") %>
+<html>
+	<head>
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;}
+			div {
+				width: 300px;
+				float: left;
+				padding: 20px;
+				margin: 0px;
+				vertical-align: top;}
+			a {
+				color: #0088dd;
+				text-decoration: none;}
+			a:hover {
+				color: #111111;}
+			#container {
+/*				width: 7000px; */
+                width: 1500px;
+				margin-left: auto;
+				margin-right: auto;
+				}
+			.section {
+				float: left;
+				border: 1px solid #0088dd;
+				padding: 20px;
+				margin: 20px;}
+			.little {
+				font-size: 0.75em;
+				color: #665544;
+				float: right;}
+			.css {
+				color: #ee3e80;}
+		</style>
+    </head>
 
+<body>
 <div id="container">
 			<div class="section">
-				<h1>HTML & CSS</h1>
+				<h1>HTML & CSS using Ruby on Rails</h1>
 				<h2 id="contents">Contents</h2>
 				<ol>
 					<li><a href="#five">Chapter 5: Images</a></li>
+                    <li><a href="#six">Chapter 6: Tables</a></li>                    
 				</ol>
 			</div>
+    
+			<div class="section">
+				<h3 id="ror">HTML and CSS running Ruby on Rails</h3>
+				<ul>
+                    <li>Please see the source code in on: <a href="https://github.com/jimmy2046/book1/tree/master/app/views/static_pages">My Github Repository</a></li>
+				</ul>
+			</div>            
+    
             
 			<div class="section">
 				<h3 id="five">Chapter 5: Images</h3>
@@ -21,7 +67,25 @@
 					<li><a href="static_pages/ch05_07_figure-and-figure-caption">New in HTML5: Figure and Figure Caption</a></li>
 					<li><a href="static_pages/ch05_08_example">Example</a></li>
 				</ul>
+                <p><a class="little" href="#contents">back</a></p>
 			</div>            
+
+			<div class="section">
+				<h3 id="six">Chapter 6: Tables</h3>
+				<ul>
+					<li><a href="static_pages/ch06_01_basic_table_structure">Basic Table Structure</a></li>
+					<li><a href="static_pages/ch06_02_table_headings">Table Headings</a></li>
+					<li><a href="static_pages/ch06_03_spanning_columns">Spanning Columns</a></li>
+					<li><a href="static_pages/ch06_04_spanning_rows">Spanning Rows</a></li>
+					<li><a href="static_pages/ch06_05_long_tables">Long Tables</a></li>
+					<li><a href="static_pages/ch06_06_width_and_spacing">(OLD CODE) Width and Spacing</a></li>
+					<li><a href="static_pages/ch06_07_border_and_background">(OLD CODE) Border and Background</a></li>
+					<li><a href="static_pages/ch06_08_example">Example</a></li>
+				</ul>
+				<p><a class="little" href="#contents">back</a></p>
+			</div>    
+    
+    </div>
             
-</div>
-            
+  </body>
+</html>

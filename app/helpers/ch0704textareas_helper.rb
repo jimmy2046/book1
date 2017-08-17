@@ -1,0 +1,2 @@
+module Ch0704textareasHelper
+end

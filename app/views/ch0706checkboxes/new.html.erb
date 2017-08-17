@@ -1,0 +1,18 @@
+<% provide(:title, "Checkbox") %>
+
+<%= form_for :ch0706checkbox, url: ch0706checkboxes_path do |f| %>
+
+<p>Please select your favorite music service(s):<br />
+  <%= check_box_tag(:service_itunes, "itunes", checked: true) %>
+  <%= label_tag(:service_itunes, "iTunes") %>    
+  <%= check_box_tag(:service_lastfm, "lastfm") %>
+  <%= label_tag(:service_lastfm, "Last.fm") %>
+  <%= check_box_tag(:service_spotify, "spotify") %>
+  <%= label_tag(:servive_spotify, "Spotify") %>            
+</p>
+
+<p>
+  <%= f.submit "Submit" %>
+</p>
+
+<% end %>

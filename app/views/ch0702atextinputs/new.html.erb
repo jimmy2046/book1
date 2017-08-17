@@ -1,0 +1,11 @@
+<% provide(:title, "Text Input") %>
+
+<%= form_for :ch0702atextinput, url: ch0702atextinputs_path do |f| %>
+  <p>
+    <%= f.label :username %>: <%= f.text_field :username, size: 15, maxlength: 30 %>
+  </p>
+  
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

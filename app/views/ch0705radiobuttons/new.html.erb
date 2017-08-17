@@ -1,0 +1,19 @@
+<% provide(:title, "Radio Button") %>
+
+<%= form_for :ch0705radiobutton, url: ch0705radiobuttons_path do |f| %>
+
+<p>
+  Please select your favorite genre:<br />
+  <%= radio_button_tag(:genre, "rock", checked: true) %>
+  <%= label_tag(:genre_rock, "Rock") %>    
+  <%= radio_button_tag(:genre, "pop") %>
+  <%= label_tag(:genre_pop, "Pop") %>
+  <%= radio_button_tag(:genre, "jazz") %>
+  <%= label_tag(:genre_jazz, "Jazz") %>            
+</p>
+
+<p>
+  <%= f.submit "Submit" %>
+</p>
+
+<% end %>

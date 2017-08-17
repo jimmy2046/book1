@@ -1,0 +1,21 @@
+<h1>Username and Password</h1>
+ 
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Password Digest</th>
+    <th>Created_at</th>
+  </tr>
+ 
+  <% @ch0703passwordinputs.each do |ch0703passwordinput| %>
+    <tr>
+      <td><%= ch0703passwordinput.username %></td>
+      <td><%= ch0703passwordinput.password_digest %></td>
+      <td><%= ch0703passwordinput.created_at %></td>        
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a new username and password', new_ch0703passwordinput_path %><br />
+<%= link_to 'Go home', root_path %>

@@ -1,0 +1,19 @@
+<h1>Listing username</h1>
+ 
+<table>
+  <tr>    
+    <th>Username</th>
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0702atextinputs.each do |ch0702atextinput| %>
+    <tr>      
+      <td><%= ch0702atextinput.username %></td>
+      <td><%= ch0702atextinput.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a new username', new_ch0702atextinput_path %><br />
+<%= link_to 'Go home', root_path %>

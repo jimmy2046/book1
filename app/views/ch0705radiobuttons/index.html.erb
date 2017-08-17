@@ -1,0 +1,19 @@
+<h1>Radio Button</h1>
+ 
+<table>
+  <tr>
+    <th>Genre</th>
+    <th>Created_at</th>
+  </tr>
+ 
+  <% @ch0705radiobuttons.each do |ch0705radiobutton| %>
+    <tr>
+      <td><%= ch0705radiobutton.genre %></td>
+      <td><%= ch0705radiobutton.created_at %></td>        
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a new genre', new_ch0705radiobutton_path %><br />
+<%= link_to 'Go home', root_path %>

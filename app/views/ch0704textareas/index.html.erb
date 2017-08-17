@@ -1,0 +1,19 @@
+<h1>Text Area</h1>
+ 
+<table>
+  <tr>
+    <th>Comment</th>
+    <th>Created_at</th>
+  </tr>
+ 
+  <% @ch0704textareas.each do |ch0704textarea| %>
+    <tr>
+      <td><%= ch0704textarea.comment %></td>
+      <td><%= ch0704textarea.created_at %></td>        
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a new comment', new_ch0704textarea_path %><br />
+<%= link_to 'Go home', root_path %>

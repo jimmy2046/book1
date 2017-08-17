@@ -1,0 +1,23 @@
+<h1>Checkbox</h1>
+ 
+<table>
+  <tr>
+    <th>iTunes</th>
+    <th>Last.fm</th>
+    <th>Spotify</th>      
+    <th>Created_at</th>
+  </tr>
+ 
+  <% @ch0706checkboxes.each do |ch0706checkbox| %>
+    <tr>
+      <td><%= ch0706checkbox.itune %></td>
+      <td><%= ch0706checkbox.lastfm %></td>
+      <td><%= ch0706checkbox.spotify %></td>        
+      <td><%= ch0706checkbox.created_at %></td>        
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Select music services', new_ch0706checkbox_path %><br />
+<%= link_to 'Go home', root_path %>

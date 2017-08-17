@@ -1,0 +1,15 @@
+<% provide(:title, "Textarea") %>
+
+
+<%= form_for :ch0704textarea, url: ch0704textareas_path do |f| %>
+
+  <p>
+    <%= f.label :comment, "What did you think of this gig?" %><br /><br />
+    <%= f.text_area :comment, cols: 20, rows: 4, value: "Enter your comments..." %>
+  </p>
+
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+
+<% end %>

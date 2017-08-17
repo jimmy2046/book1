@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  itune: false
+  lastfm: false
+  spotify: false
+
+two:
+  itune: false
+  lastfm: false
+  spotify: false

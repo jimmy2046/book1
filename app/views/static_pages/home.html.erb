@@ -18,13 +18,14 @@
 				color: #111111;}
 			#container {
 /*				width: 7000px; */
-                width: 1500px;
+                width: 1200px;
 				margin-left: auto;
 				margin-right: auto;
 				}
 			.section {
 				float: left;
-				border: 1px solid #0088dd;
+/*				border: 1px solid #0088dd; */
+                border: 1px solid #e69900;                
 				padding: 20px;
 				margin: 20px;}
 			.little {
@@ -43,12 +44,13 @@
 				<h2 id="contents">Contents</h2>
 				<ol>
 					<li><a href="#five">Chapter 5: Images</a></li>
-                    <li><a href="#six">Chapter 6: Tables</a></li>                    
+                    <li><a href="#six">Chapter 6: Tables</a></li>
+                    <li><a href="#seven">Chapter 7: Forms</a></li>
 				</ol>
 			</div>
     
 			<div class="section">
-				<h3 id="ror">HTML and CSS running Ruby on Rails</h3>
+				<h3 id="ror">Source Code</h3>
 				<ul>
                     <li>Please see the source code in on: <a href="https://github.com/jimmy2046/book1/tree/master/app/views/static_pages">My Github Repository</a></li>
 				</ul>
@@ -81,6 +83,19 @@
 					<li><a href="static_pages/ch06_06_width_and_spacing">(OLD CODE) Width and Spacing</a></li>
 					<li><a href="static_pages/ch06_07_border_and_background">(OLD CODE) Border and Background</a></li>
 					<li><a href="static_pages/ch06_08_example">Example</a></li>
+				</ul>
+				<p><a class="little" href="#contents">back</a></p>
+			</div>    
+
+			<div class="section">
+				<h3 id="seven">Chapter 7: Forms</h3>
+				<ul>
+					<li><a href="static_pages/ch07_01_form_structure">Form Structure</a></li>
+                    <li><%= link_to 'Text Input', new_ch0702atextinput_path %></li>
+                    <li><%= link_to 'Password Input', new_ch0703passwordinput_path %></li>
+                    <li><%= link_to 'Textarea', new_ch0704textarea_path %></li>
+                    <li><%= link_to 'Radio Button', new_ch0705radiobutton_path %></li>
+                    <li><%= link_to 'Checkbox', new_ch0706checkbox_path %></li>
 				</ul>
 				<p><a class="little" href="#contents">back</a></p>
 			</div>    

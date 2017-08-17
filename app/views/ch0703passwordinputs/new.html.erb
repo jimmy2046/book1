@@ -1,0 +1,23 @@
+<% provide(:title, "Password Input") %>
+
+<%= form_for :ch0703passwordinput, url: ch0703passwordinputs_path do |f| %>
+
+  <p>
+    <%= f.label :username %>: 
+    <%= f.text_field :username, size: 15, maxlength: 30 %>
+  </p>
+ 
+  <p>      
+    <%= f.label :password %>: 
+    <%= f.password_field :password, size: 15, maxlength: 30 %>      
+  </p>
+ 
+
+  <p>
+    <%= f.label :password_confirmation, "Confirmation" %>: <%= f.password_field :password_confirmation, size: 15, maxlength: 30 %>
+  </p>
+
+  <p>
+    <%= f.submit "Submit"%>
+  </p>
+<% end %>

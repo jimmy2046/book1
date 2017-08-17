@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    
+
   root 'static_pages#home'    
 
   get  'static_pages/ch05_01_adding_images'    
@@ -19,5 +19,14 @@ Rails.application.routes.draw do
   get  'static_pages/ch06_06_width_and_spacing'
   get  'static_pages/ch06_07_border_and_background'
   get  'static_pages/ch06_08_example'
+
+  get  'static_pages/ch07_01_form_structure'    
+  get  'static_pages/ch07_02_text_input'
+   
+  resources :ch0702atextinputs
+  resources :ch0703passwordinputs
+  resources :ch0704textareas
+  resources :ch0705radiobuttons
+  resources :ch0706checkboxes
     
 end

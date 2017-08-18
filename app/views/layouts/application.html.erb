@@ -2,8 +2,15 @@
 <html>
   <head>
     <title><%= yield(:title) %></title>
+            
     <%= csrf_meta_tags %>
 
+    <meta name='description' content='<%= yield_meta_tag(:description, 'Default description') %>' />      
+    <meta name='keywords' content='<%= yield_meta_tag(:keywords, 'ruby, rails') %>' />      
+    <meta name='robots' content='<%= yield_meta_tag(:robots, 'nofollow') %>' />    
+    <meta name='author' content='<%= yield_meta_tag(:author, 'Jimmy Chong') %>' />    
+    <meta name='pragma' content='<%= yield_meta_tag(:pragma, 'no-cache') %>' />      
+            
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>

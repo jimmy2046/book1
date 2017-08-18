@@ -1,9 +1,22 @@
 <% provide(:title, "Search Input") %>
 
-<%= form_for :ch0718searchinput, url: ch0718searchinputs_path do |f| %>
-  <p>
-      Search:
-      <%= f.text_field :search, size: 30 %>
-      <%= f.submit "Search" %>
-  </p>    
+<%= form_tag(ch0718searchinputs_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    <%= submit_tag "Search", :name => nil %>
 <% end %>
+
+<h1>Text Area</h1>
+ 
+<table>
+  <tr>
+    <th>Comment</th>
+    <th>Created_at</th>
+  </tr>
+ 
+  <% @ch0704textareas.each do |ch0704textarea| %>
+    <tr>
+      <td><%= ch0704textarea.comment %></td>
+      <td><%= ch0704textarea.created_at %></td>        
+    </tr>
+  <% end %>
+</table>

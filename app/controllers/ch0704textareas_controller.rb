@@ -15,7 +15,11 @@ class Ch0704textareasController < ApplicationController
       render 'new'
     end
   end
-    
+
+  def search(search)
+    where("comment LIKE ?", "%#{search}%") 
+  end    
+        
 private
     def ch0704textarea_params
       params.require(:ch0704textarea).permit(:comment)

@@ -1,0 +1,29 @@
+<h1>Feedback</h1>
+ 
+<table>
+  <tr>    
+    <th>Name</th>
+    <th>Email</th>
+    <th>Referrer</th>      
+    <th>Rating</th>
+    <th>Comment</th>
+    <th>Subscribe</th>            
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0719exampleforms.each do |ch0719exampleform| %>
+    <tr>      
+      <td><%= ch0719exampleform.name %></td>
+      <td><%= ch0719exampleform.email %></td>
+      <td><%= ch0719exampleform.referrer %></td>
+      <td><%= ch0719exampleform.rating %></td>
+      <td><%= ch0719exampleform.comment %></td>
+      <td><%= ch0719exampleform.subscribe %></td>
+      <td><%= ch0719exampleform.created_at %></td>                
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add new feedback', new_ch0719exampleform_path %><br />
+<%= link_to 'Go home', root_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170818013955) do
+ActiveRecord::Schema.define(version: 20170818044806) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -118,6 +118,24 @@ ActiveRecord::Schema.define(version: 20170818013955) do
 
   create_table "ch0717urlinputs", force: :cascade do |t|
     t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ch0719exampleforms", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "referrer"
+    t.string "rating"
+    t.text "comment"
+    t.string "subscribe"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ch0720votes", force: :cascade do |t|
+    t.string "username"
+    t.string "musician"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

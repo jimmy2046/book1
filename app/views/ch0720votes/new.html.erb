@@ -1,0 +1,35 @@
+<% provide(:title, "Vote for your favorite Jazz musician of all time") %>
+
+<%= form_for :ch0720vote, url: ch0720votes_path do |f| %>
+
+  <h3>VOTE FOR YOUR FAVORITE JAZZ MUSICIAN OF ALL TIME</h3>
+
+  <table>
+    <tr>
+      <td><%= f.label :username %>: </td> 
+      <td><%= f.text_field :username, size: 15, maxlength: 30 %><br /></td>
+    </tr>
+  
+    <tr>        
+      <td>I vote for: <br /><br /><br /><br /><br /><br /><br /></td>
+      <td>
+    <%= f.radio_button(:musician, "Ella Fitzgerald") %> 
+    <%= f.label(:musician, "Ella Fitzgerald") %><br />
+
+    <%= f.radio_button(:musician, "Herbie Hancock") %> 
+    <%= f.label(:musician, "Herbie Hancock") %><br />
+      
+    <%= f.radio_button(:musician, "John Coltrane") %> 
+    <%= f.label(:musician, "John Coltrane") %><br />
+      
+    <%= f.radio_button(:musician, "Miles Davis") %> 
+    <%= f.label(:musician, "Miles Davis") %><br />
+      
+    <%= f.radio_button(:musician, "Theronius Monk") %> 
+    <%= f.label(:musician, "Theronius Monk") %><br />
+      </td>
+    </tr>
+  </table>
+
+  <%= f.submit "Submit" %>
+<% end %>

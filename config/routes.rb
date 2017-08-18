@@ -39,6 +39,8 @@ Rails.application.routes.draw do
   resources :ch0715dateinputs
   resources :ch0716emailinputs
   resources :ch0717urlinputs
-  resources :ch0718searchinputs
+#  resources :ch0718searchinputs
+  resources :ch0719exampleforms
+  resources :ch0720votes    
     
 end

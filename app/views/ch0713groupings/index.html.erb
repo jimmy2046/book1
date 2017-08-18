@@ -1,0 +1,23 @@
+<h1>Grouping Form Elements</h1>
+ 
+<table>
+  <tr>    
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Telephone</th>
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0713groupings.each do |ch0713grouping| %>
+    <tr>      
+      <td><%= ch0713grouping.email %></td>
+      <td><%= ch0713grouping.mobile %></td>
+      <td><%= ch0713grouping.telephone %></td>        
+      <td><%= ch0713grouping.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add new', new_ch0713grouping_path %><br />
+<%= link_to 'Go home', root_path %>

@@ -9,7 +9,11 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 
+# bcrypt for password security
 gem 'bcrypt',         '3.1.11'
+
+# carrierwave for file upload
+gem 'carrierwave',    '1.1.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'

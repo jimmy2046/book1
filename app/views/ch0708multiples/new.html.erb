@@ -1,0 +1,12 @@
+<% provide(:title, "Multiple Select Box") %>
+
+<%= form_for :ch0708multiple, url: ch0708multiples_path do |f| %>
+
+<p>Do you play any of the following instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+<%= f.select :instrument, options_for_select(["Guitar","Drums","Keyboard","Bass"]), {}, class: "form-control", multiple: true, size: 3 %>
+
+<p>
+  <%= f.submit "Submit" %>
+</p>
+
+<% end %>

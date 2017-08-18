@@ -1,0 +1,18 @@
+<% provide(:title, "Labelling Form Controls") %>
+
+<%= form_for :ch0712labelling, url: ch0712labellings_path do |f| %>
+
+  <%= f.label :age, "Age: " %> 
+  <%= f.text_field :age %><br />
+
+  <%= f.label :gender, "Gender: " %>
+
+  <%= f.radio_button(:gender, "female") %> 
+  <%= label_tag(:gender, "Female") %>    
+
+  <%= f.radio_button(:gender, "male") %>
+  <%= label_tag(:gender, "Male") %><br />
+  
+  <%= f.submit "Submit" %>
+
+<% end %>

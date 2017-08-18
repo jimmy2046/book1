@@ -1,0 +1,13 @@
+<% provide(:title, "Drop Down List Box") %>
+
+<%= form_for :ch0707dropdown, url: ch0707dropdowns_path do |f| %>
+
+<p>What device do you listen to music on?</p>
+
+<%= f.select :device, options_for_select(["iPod","Radio","Computer"]), {}, class: "form-control" %>
+
+<p>
+  <%= f.submit "Submit" %>
+</p>
+
+<% end %>

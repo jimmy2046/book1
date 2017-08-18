@@ -1,0 +1,9 @@
+<% provide(:title, "Search Input") %>
+
+<%= form_for :ch0718searchinput, url: ch0718searchinputs_path do |f| %>
+  <p>
+      Search:
+      <%= f.text_field :search, size: 30 %>
+      <%= f.submit "Search" %>
+  </p>    
+<% end %>

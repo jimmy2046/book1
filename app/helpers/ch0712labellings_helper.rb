@@ -1,0 +1,2 @@
+module Ch0712labellingsHelper
+end

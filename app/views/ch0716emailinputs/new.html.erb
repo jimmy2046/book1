@@ -1,0 +1,9 @@
+<% provide(:title, "HTML5 Email Input") %>
+
+<%= form_for :ch0716emailinput, url: ch0716emailinputs_path do |f| %>
+
+  <p>Please enter your email address:</p>
+  <%=  email_field("ch0716emailinput", "email") %>
+  <%= f.submit "Submit" %>
+
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guitar: false
+  drum: false
+  keyboard: false
+  bass: false
+
+two:
+  guitar: false
+  drum: false
+  keyboard: false
+  bass: false

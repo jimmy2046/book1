@@ -1,0 +1,19 @@
+<h1>File Input Box</h1>
+ 
+<table>
+  <tr>    
+    <th>Song</th>
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0709fileinputs.each do |ch0709fileinput| %>
+    <tr>      
+      <td><%= ch0709fileinput.song.url %></td>
+      <td><%= ch0709fileinput.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a new song', new_ch0709fileinput_path %><br />
+<%= link_to 'Go home', root_path %>

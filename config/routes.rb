@@ -28,5 +28,17 @@ Rails.application.routes.draw do
   resources :ch0704textareas
   resources :ch0705radiobuttons
   resources :ch0706checkboxes
+  resources :ch0707dropdowns
+  resources :ch0708multiples
+  resources :ch0709fileinputs
+  resources :ch0710submitbuttons    
+  resources :ch0711imagebuttons
+  resources :ch0712labellings
+  resources :ch0713groupings
+  resources :ch0714validations    
+  resources :ch0715dateinputs
+  resources :ch0716emailinputs
+  resources :ch0717urlinputs
+  resources :ch0718searchinputs
     
 end

@@ -1,0 +1,19 @@
+<h1>HTML5: Date Input</h1>
+ 
+<table>
+  <tr>    
+    <th>Departure</th>
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0715dateinputs.each do |ch0715dateinput| %>
+    <tr>      
+      <td><%= ch0715dateinput.departure %></td>
+      <td><%= ch0715dateinput.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add new date', new_ch0715dateinput_path %><br />
+<%= link_to 'Go home', root_path %>

@@ -1,0 +1,21 @@
+<% provide(:title, "Image Button") %>
+
+<html>
+	<head>
+		<style type="text/css">
+            input[type="image"]
+            {
+                background:url("subscribe.jpg");
+            }            
+		</style>
+	</head>
+	<body>
+
+        <%= form_for :ch0711imagebutton, url: ch0711imagebuttons_path do |f| %>
+          <p>Subscribe to our email list:</p>
+          <%= f.text_field :email %>
+          <%= f.submit "Submit" %>
+        <% end %>        
+                
+	</body>
+</html>

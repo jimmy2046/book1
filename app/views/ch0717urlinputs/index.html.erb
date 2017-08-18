@@ -1,0 +1,19 @@
+<h1>HTML5: URL Input</h1>
+ 
+<table>
+  <tr>    
+    <th>URL</th>
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0717urlinputs.each do |ch0717urlinput| %>
+    <tr>      
+      <td><%= ch0717urlinput.url %></td>
+      <td><%= ch0717urlinput.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a new URL', new_ch0717urlinput_path %><br />
+<%= link_to 'Go home', root_path %>

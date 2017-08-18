@@ -1,0 +1,9 @@
+<% provide(:title, "HTML5 URL Input") %>
+
+<%= form_for :ch0717urlinput, url: ch0717urlinputs_path do |f| %>
+
+  <p>Please enter your website address:</p>
+  <%= url_field("ch0717urlinput", "url") %>
+  <%= f.submit "Submit" %>
+
+<% end %>

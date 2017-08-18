@@ -1,4 +1,4 @@
-<% provide(:title, "HTML & CSS - Design and Build Websites") %>
+<% provide(:title, "HTML and CSS using Ruby and Rails") %>
 <html>
 	<head>
 		<style type="text/css">
@@ -40,7 +40,7 @@
 <body>
 <div id="container">
 			<div class="section">
-				<h1>HTML & CSS using Ruby on Rails</h1>
+				<h1>HTML and CSS using Ruby on Rails</h1>
 				<h2 id="contents">Contents</h2>
 				<ol>
 					<li><a href="#five">Chapter 5: Images</a></li>
@@ -52,13 +52,14 @@
 			<div class="section">
 				<h3 id="ror">Source Code</h3>
 				<ul>
-                    <li>Please see the source code in on: <a href="https://github.com/jimmy2046/book1/tree/master/app/views/static_pages">My Github Repository</a></li>
+                    <li>Please see the source code in Ruby on Rails on: <a href="https://github.com/jimmy2046/book1/tree/master/app/views/static_pages">My Github Repository</a></li>
 				</ul>
 			</div>            
     
             
 			<div class="section">
 				<h3 id="five">Chapter 5: Images</h3>
+                <p>Ruby on Rails use 'image_tag()' to display images.</p>
 				<ul>
 					<li><a href="static_pages/ch05_01_adding_images">Adding Images</a></li>
 					<li><a href="static_pages/ch05_02_height_and_width_of_images">Height and Width of Images</a></li>
@@ -74,6 +75,7 @@
 
 			<div class="section">
 				<h3 id="six">Chapter 6: Tables</h3>
+                <p>Most HTML tags for tables can be re-used for Ruby on Rails</p>
 				<ul>
 					<li><a href="static_pages/ch06_01_basic_table_structure">Basic Table Structure</a></li>
 					<li><a href="static_pages/ch06_02_table_headings">Table Headings</a></li>
@@ -89,6 +91,7 @@
 
 			<div class="section">
 				<h3 id="seven">Chapter 7: Forms</h3>
+                <p>Form examples are running on Ruby on Rails with PostgreSQL database at the back-end whereas HTML at the front-end. You can see the results stored in the database after pressing the "Submit" button.</p>
 				<ul>
 					<li><a href="static_pages/ch07_01_form_structure">Form Structure</a></li>
                     <li><%= link_to 'Text Input', new_ch0702atextinput_path %></li>
@@ -96,7 +99,18 @@
                     <li><%= link_to 'Textarea', new_ch0704textarea_path %></li>
                     <li><%= link_to 'Radio Button', new_ch0705radiobutton_path %></li>
                     <li><%= link_to 'Checkbox', new_ch0706checkbox_path %></li>
-				</ul>
+                    <li><%= link_to 'Drop Down List Box', new_ch0707dropdown_path %></li>
+                    <li><%= link_to 'Multiple Select Box', new_ch0708multiple_path %></li>
+                    <li><%= link_to 'File Input Box', new_ch0709fileinput_path %></li>
+                    <li><%= link_to 'Submit Button', new_ch0710submitbutton_path %></li>
+                    <li><a href="#">Image Button</a></li>
+                    <li><%= link_to 'Labelling Form Controls', new_ch0712labelling_path %></li>
+                    <li><%= link_to 'Grouping Form Elements', new_ch0713grouping_path %></li>
+                    <li><%= link_to 'HTML5 Form Validation', new_ch0714validation_path %></li>
+                    <li><%= link_to 'HTML5 Date Input (Please use Google Chrome)', new_ch0715dateinput_path %></li>
+                    <li><%= link_to 'HTML5 Email Input', new_ch0716emailinput_path %></li>
+                    <li><%= link_to 'HTML5 URL Input', new_ch0717urlinput_path %></li>
+                </ul>
 				<p><a class="little" href="#contents">back</a></p>
 			</div>    
     

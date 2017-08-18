@@ -1,0 +1,2 @@
+module Ch0716emailinputsHelper
+end

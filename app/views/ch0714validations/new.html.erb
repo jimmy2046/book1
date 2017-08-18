@@ -1,0 +1,13 @@
+<% provide(:title, "HTML5 Form Validation") %>
+
+<%= form_for :ch0714validation, url: ch0714validations_path do |f| %>
+
+  <%= f.label :username %>:
+  <%= f.text_field :username, required: true %><br />
+
+  <%= f.label :password %>: 
+  <%= f.password_field :password, required: true %>
+
+  <%= f.submit "Submit" %>
+
+<% end %>

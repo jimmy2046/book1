@@ -1,0 +1,10 @@
+<% provide(:title, "File Input Box") %>
+
+<%= form_for :ch0709fileinput, url: ch0709fileinputs_path do |f| %>
+
+<p>Upload your song in MP3 format:</p>
+
+<%= f.file_field :song %><br />
+<%= f.submit "Upload" %>
+
+<% end %>

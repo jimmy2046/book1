@@ -1,0 +1,2 @@
+module Ch0711imagebuttonsHelper
+end

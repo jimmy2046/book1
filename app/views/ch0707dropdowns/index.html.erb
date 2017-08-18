@@ -1,0 +1,19 @@
+<h1>Drop Down List Box</h1>
+ 
+<table>
+  <tr>    
+    <th>Devices</th>
+    <th>Created_at</th>      
+  </tr>
+ 
+  <% @ch0707dropdowns.each do |ch0707dropdown| %>
+    <tr>      
+      <td><%= ch0707dropdown.device %></td>
+      <td><%= ch0707dropdown.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Add a device name', new_ch0707dropdown_path %><br />
+<%= link_to 'Go home', root_path %>

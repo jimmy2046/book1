@@ -1,0 +1,9 @@
+<% provide(:title, "HTML5 Date Input") %>
+
+<%= form_for :ch0715dateinput, url: ch0715dateinputs_path do |f| %>
+
+  <%= f.label(:username, "Departure date: ") %>
+  <%= date_field("ch0715dateinput", "departure") %>
+  <%= f.submit "Submit" %>
+
+<% end %>

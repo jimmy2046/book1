@@ -1,0 +1,2 @@
+module Ch0718searchinputsHelper
+end

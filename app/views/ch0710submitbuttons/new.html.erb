@@ -1,0 +1,7 @@
+<% provide(:title, "Submit Button") %>
+
+<%= form_for :ch0710submitbutton, url: ch0710submitbuttons_path do |f| %>
+  <p>Subscribe to our email list:</p>
+  <%= f.text_field :email %>
+  <%= f.submit "Subscribe" %>
+<% end %>

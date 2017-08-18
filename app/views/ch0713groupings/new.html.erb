@@ -1,0 +1,17 @@
+<% provide(:title, "Grouping Form Elements") %>
+
+<%= form_for :ch0713grouping, url: ch0713groupings_path do |f| %>
+
+  <fieldset>
+      <legend>Contact details</legend>
+      <%= f.label :email %>:<br />
+      <%= f.text_field :email %><br />
+      <%= f.label :mobile %>:<br />
+      <%= f.text_field :mobile %><br />
+      <%= f.label :telephone %>:<br />
+      <%= f.text_field :telephone %><br />      
+  </fieldset>
+  
+  <%= f.submit "Submit" %>
+
+<% end %>

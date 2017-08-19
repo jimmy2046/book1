@@ -8,6 +8,9 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
+# https://stackoverflow.com/questions/25100619/rails-4-1-add-videos-folder-to-asset-pipeline
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/video"
+
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.

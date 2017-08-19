@@ -57,5 +57,9 @@ Rails.application.routes.draw do
   get  'static_pages/ch08_09_iframes_continued'
   get  'static_pages/ch08_10_meta'
   get  'static_pages/ch08_11_example'
+
+  # Chapter 9
+  get  'static_pages/ch09_01_adding_html5_video'
+  get  'static_pages/ch09_02_adding_youtube'
     
 end

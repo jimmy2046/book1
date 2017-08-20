@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+#  get 'ch1218examples/index'
+#  get 'ch1213textindents/index'
+#  get 'ch1204understandingfontformats/index'
+#  get 'ch1203fontfaces/index'
 #  get 'ch1105examples/index'
 #  get 'ch1005externalstylesheets/index'
 #  get 'ch1003examples/index'    
@@ -84,5 +88,27 @@ Rails.application.routes.draw do
   get 'static_pages/ch11_03_opacity'
   get 'static_pages/ch11_04_hsla'    
   resources  :ch1105examples
+
+  # Chapter 12
+  get 'static_pages/ch12_01_font_family'
+  get 'static_pages/ch12_02_font_size'
+  resources  :ch1203fontfaces
+  resources  :ch1204understandingfontformats
+  get 'static_pages/ch12_05_font_weight'
+  get 'static_pages/ch12_06_font_style'
+  get 'static_pages/ch12_07_text_transform'    
+  get 'static_pages/ch12_08_text_decoration'
+  get 'static_pages/ch12_09_line_height'
+  get 'static_pages/ch12_10_letter_and_word_spacing'
+  get 'static_pages/ch12_11_text_align'
+  get 'static_pages/ch12_12_vertical_align'
+#  get 'static_pages/ch12_13_text_indent'
+  resources :ch1213textindents
+  get 'static_pages/ch12_14_text_shadow'
+  get 'static_pages/ch12_15_first_letter_and_line'
+  get 'static_pages/ch12_16_link_visited'
+  get 'static_pages/ch12_17_hover_active_focus'
+  resources :ch1218examples
+  get 'static_pages/ch12_19_no_style'
     
 end

@@ -1,0 +1,2 @@
+module Ch1218examplesHelper
+end

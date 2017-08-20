@@ -1,0 +1,2 @@
+module Ch1203fontfacesHelper
+end

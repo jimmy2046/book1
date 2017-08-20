@@ -19,3 +19,8 @@ Rails.application.config.assets.paths << "#{Rails.root}/app/assets/video"
 Rails.application.config.assets.precompile += %w( ch1003examples.scss )
 Rails.application.config.assets.precompile += %w( ch1005externalstylesheets.scss )
 Rails.application.config.assets.precompile += %w( ch1105examples.scss )
+Rails.application.config.assets.precompile += %w( ch1203fontfaces.scss )
+Rails.application.config.assets.precompile += %w( ch1204understandingfontformats.scss )
+Rails.application.config.assets.precompile += %w( custom.scss )
+Rails.application.config.assets.precompile += %w( ch1213textindents.scss )
+Rails.application.config.assets.precompile += %w( ch1218examples.scss )

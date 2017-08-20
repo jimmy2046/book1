@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+#  get 'ch1005externalstylesheets/index'
+#  get 'ch1003examples/index'    
+
   root 'static_pages#home'    
 
   # Chapter 5
@@ -61,5 +64,17 @@ Rails.application.routes.draw do
   # Chapter 9
   get  'static_pages/ch09_01_adding_html5_video'
   get  'static_pages/ch09_02_adding_youtube'
+
+  # Chapter 10
+  get  'static_pages/ch10_01_thinking_inside_the_box_borderless'
+  get  'static_pages/ch10_02_thinking_inside_the_box'
+  resources :ch1003examples    
+  get  'static_pages/ch10_04_example_css'
+  resources :ch1005externalstylesheets
+  get  'static_pages/ch10_06_styles'
+  get  'static_pages/ch_10_07_using_internal_css'
+  get  'static_pages/ch_10_08_css_selectors'
+  get  'static_pages/ch_10_09_cascade'
+  get  'static_pages/ch_10_10_inheritance'
     
 end

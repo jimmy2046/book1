@@ -1,0 +1,2 @@
+module Ch1005externalstylesheetsHelper
+end

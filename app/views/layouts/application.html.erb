@@ -10,9 +10,16 @@
     <meta name='robots' content='<%= yield_meta_tag(:robots, 'nofollow') %>' />    
     <meta name='author' content='<%= yield_meta_tag(:author, 'Jimmy Chong') %>' />    
     <meta name='pragma' content='<%= yield_meta_tag(:pragma, 'no-cache') %>' />      
-            
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<!-- https://stackoverflow.com/questions/34993384/how-to-restrict-a-css-file-for-only-on-one-view-in-rails  -->      
+<!--
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+-->
+
+<!--       
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+-->
+
   </head>
 
   <body>

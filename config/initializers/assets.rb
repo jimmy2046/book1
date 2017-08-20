@@ -18,3 +18,4 @@ Rails.application.config.assets.paths << "#{Rails.root}/app/assets/video"
 
 Rails.application.config.assets.precompile += %w( ch1003examples.scss )
 Rails.application.config.assets.precompile += %w( ch1005externalstylesheets.scss )
+Rails.application.config.assets.precompile += %w( ch1105examples.scss )

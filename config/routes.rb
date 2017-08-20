@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+#  get 'ch1105examples/index'
 #  get 'ch1005externalstylesheets/index'
 #  get 'ch1003examples/index'    
 
@@ -72,9 +73,16 @@ Rails.application.routes.draw do
   get  'static_pages/ch10_04_example_css'
   resources :ch1005externalstylesheets
   get  'static_pages/ch10_06_styles'
-  get  'static_pages/ch_10_07_using_internal_css'
-  get  'static_pages/ch_10_08_css_selectors'
-  get  'static_pages/ch_10_09_cascade'
-  get  'static_pages/ch_10_10_inheritance'
+  get  'static_pages/ch10_07_using_internal_css'
+  get  'static_pages/ch10_08_css_selectors'
+  get  'static_pages/ch10_09_cascade'
+  get  'static_pages/ch10_10_inheritance'
+
+  # Chapter 11
+  get 'static_pages/ch11_01_foreground_color'
+  get 'static_pages/ch11_02_background_color'
+  get 'static_pages/ch11_03_opacity'
+  get 'static_pages/ch11_04_hsla'    
+  resources  :ch1105examples
     
 end

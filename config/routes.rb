@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
 
-#  get 'ch1218examples/index'
-#  get 'ch1213textindents/index'
-#  get 'ch1204understandingfontformats/index'
-#  get 'ch1203fontfaces/index'
-#  get 'ch1105examples/index'
-#  get 'ch1005externalstylesheets/index'
-#  get 'ch1003examples/index'    
+#  get 'ch1319examples/index'
+#  get 'ch1316borderimages/index'
 
   root 'static_pages#home'    
 
@@ -110,5 +105,27 @@ Rails.application.routes.draw do
   get 'static_pages/ch12_17_hover_active_focus'
   resources :ch1218examples
   get 'static_pages/ch12_19_no_style'
+   
+  # Chapter 13
+  get 'static_pages/ch13_01_width_height'
+  get 'static_pages/ch13_02_min_width_max_width'
+  get 'static_pages/ch13_03_min_height_max_height'
+  get 'static_pages/ch13_04_overflow'
+  get 'static_pages/ch13_05_white_space_vertical_margin'
+  get 'static_pages/ch13_06_white_space_vertical_margin_no_space'
+  get 'static_pages/ch13_07_border_width'
+  get 'static_pages/ch13_08_border_style'
+  get 'static_pages/ch13_09_border_color'
+  get 'static_pages/ch13_10_border_shorthand'
+  get 'static_pages/ch13_11_padding'
+  get 'static_pages/ch13_12_margin'
+  get 'static_pages/ch13_13_centering_content'
+  get 'static_pages/ch13_14_display'
+  get 'static_pages/ch13_15_visibility'
+  resources :ch1316borderimages    
+  get 'static_pages/ch13_16_box_shadow'
+  get 'static_pages/ch13_17_border_radius'
+  get 'static_pages/ch13_18_elliptical_shapes'
+  resources :ch1319examples
     
 end

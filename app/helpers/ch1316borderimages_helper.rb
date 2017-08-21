@@ -1,0 +1,2 @@
+module Ch1316borderimagesHelper
+end

@@ -24,3 +24,5 @@ Rails.application.config.assets.precompile += %w( ch1204understandingfontformats
 Rails.application.config.assets.precompile += %w( custom.scss )
 Rails.application.config.assets.precompile += %w( ch1213textindents.scss )
 Rails.application.config.assets.precompile += %w( ch1218examples.scss )
+Rails.application.config.assets.precompile += %w( ch1316borderimages.scss )
+Rails.application.config.assets.precompile += %w( ch1319examples.scss )
